@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Form validation</title>
+<link rel="stylesheet" href="C:\Users\PRITISH\Desktop\js Q3\style.css">
+
+
+</head>
+<body>
+    <body>
+        <form name="form1">
+        <h2>Movie ticket booking</h2>
+        
+        <div> Choose a movie:
+        <select name="movie" id="movie">
+            <option value="">Select</option>
+         <option value="Sholay">Sholay</option>
+         <option value="Wolf of Wall Street">Wolf of Wall Street </option>
+         <option value="Inception">Inception</option>
+        </select>
+        </div>
+        
+        <div>
+         Name: <input type="text" name="textbox" id="textbox" value="" />
+        </div>
+        <div>
+            Phone Number: <input type="text" name="textbox" id="textbox" value="" />
+           </div>
+           <div>
+            Email: <input type="email" name="textbox" id="textbox" value="" />
+           </div>
+        
+        <div>
+         <label> <input type="radio" name="tickets" value="250" id="btn1" />Balcony - Rs 250</label>
+         <label> <input type="radio" name="tickets" value="500" id="btn1" checked />Recliner - Rs 500</label>
+        </div>
+        
+        <div>
+         Quantity <input type="text" name="quantity" id="quantity" value="2" size="3" />
+         <input style="background-color: #ff8882;margin-top: 10%;color: aliceblue;"type="button" value="Purchase" onclick="printPrice()" />
+        </div>
+        </form>
+        
+        <div id="inserts"> </div>
+        </body>
+       
+<script src="C:\Users\PRITISH\Desktop\js Q3\script.js">
+
+</script>
+</html>
