@@ -43,12 +43,19 @@
         </form>
         
         <div id="inserts"> </div>
-          <a id="WA" href="whatsapp://send?text=Here is my Dashboard" data-action="share/whatsapp/share" target="_blank"><button id="share-button"><i class="fab fa-whatsapp-square"></i></button></a>
+          <a id="WA" href="" data-action="share/whatsapp/share" target="_blank"><button id="share-button"><i class="fab fa-whatsapp-square"></i></button></a>
         </body>
        
 <script src="script.js">
 
 </script>
-     
+      <script type="text/javascript">
+    document.getElementById('WA').onclick = function() {
+    
+      const URL = window.location.href.slice(8);
+      const link = document.getElementById('WA').href= "whatsapp://send?text=Here is my Dashboard " + URL;
+      console.log(URL);
+    }
+  </script> 
 
 </html>
