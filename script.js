@@ -31,10 +31,4 @@ function getRBtnName(GrpName) {
 
   return str;
 }
-    document.getElementById('WA').onclick = function() {
-    
-      const URL = window.location.href.slice(8);
-      const link = document.getElementById('WA').href= "whatsapp://send?text=Here is my Dashboard " + URL;
-      console.log(URL);
-    }
-
+  
